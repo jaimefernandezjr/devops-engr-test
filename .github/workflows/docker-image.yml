@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}//devops-test-rest-api-service:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/devops-test-rest-api-service:latest
