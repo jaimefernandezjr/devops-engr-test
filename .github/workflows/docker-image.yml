@@ -26,3 +26,11 @@ jobs:
         with:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/devops-test-rest-api-service:latest
+
+      - name: Trigger CD workflow
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PAT }}
+          repository: jaimefernandezjr/devops-engr-test-iac
+          event-type: ci-completed
+          client-payload: '{"ref": "development"}'
