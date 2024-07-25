@@ -4,7 +4,7 @@
 This project deploys a REST API service on AWS using GitHub Actions for CI/CD and Terraform for Infrastructure as Code. The service can can be accessed in this public endpoint: [PUBLIC ENDPOINT].
 
 ## The Node Application
-The Node.js application consumes a REST API from [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts) ) and displays the data as a response. It uses the Express framework to create a web server and Axios, a promise-based HTTP client, to fetch data from the external API. The app fetches data from the given endpoint by making an HTTP GET request. If successful, the data from the response is sent back to the client in JSON format. The server listens for incoming requests on port 3000.
+The Node.js application consumes a REST API from [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts) and displays the data as a response. It uses the Express framework to create a web server and Axios, a promise-based HTTP client, to fetch data from the external API. The app fetches data from the given endpoint by making an HTTP GET request. If successful, the data from the response is sent back to the client in JSON format. The server listens for incoming requests on port 3000.
 
 ## Dockerizing the Application
 - **Dockerfile**: Created to Dockerize the application.
