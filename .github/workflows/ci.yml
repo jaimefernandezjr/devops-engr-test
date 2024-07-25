@@ -3,6 +3,9 @@ name: DevOps Test Rest API Service Continuous Integration
 on:
   push:
     branches: [ development ]
+    paths-ignore:
+    - README.md
+    - .gitignore
 
 jobs:
   build-and-push:
