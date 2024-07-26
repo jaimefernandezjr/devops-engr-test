@@ -3,7 +3,6 @@ const axios = require('axios');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Default route for the root URL
 app.get('/', (req, res) => {
     res.send('Welcome to the REST API Service! Use /posts to fetch data.');
 });
